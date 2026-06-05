@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>株式会社Festal｜現場に、火を。— 戦略・ITコンサルティング</title>
+  <meta name="description" content="株式会社Festalは、提案で終わらせず実装まで伴走するコンサルティングファームです。現場主義を貫き、戦略・IT・地方創生の領域で、クライアントと社会の成長に火を灯します。" />
+  <meta name="theme-color" content="#0b0d12" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="株式会社Festal" />
+  <meta property="og:title" content="株式会社Festal｜現場に、火を。" />
+  <meta property="og:description" content="提案で終わらせない。現場に入り込み、実装まで伴走する。クライアントと社会の成長に、火を灯す。" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://use.typekit.net/rzm1rkk.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Shippori+Mincho:wght@700;800&display=swap" />
+  <link rel="icon" href="assets/images/uploads/cropped-site-logo-32x32.jpg" sizes="32x32" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="is-loading">
+  <a class="skip-link" href="#main">本文へスキップ</a>
+
+  <!-- ============ LOADER ============ -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <span class="loader__icon"></span>
+      <span class="loader__word">
+        <span>F</span><span>e</span><span>s</span><span>t</span><span>a</span><span>l</span>
+      </span>
+      <span class="loader__bar"><i></i></span>
+    </div>
+  </div>
+
+  <!-- ============ CUSTOM CURSOR ============ -->
+  <div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="hdr" id="hdr" data-mode="dark">
+    <div class="hdr__inner">
+      <a class="brand" href="#top" data-cursor="" aria-label="株式会社Festal トップへ">
+        <span class="brand__icon" aria-hidden="true"></span>
+        <span class="brand__name">Festal</span>
+      </a>
+      <nav class="nav" aria-label="メインナビゲーション">
+        <ul>
+          <li><a href="#vision" data-cursor>Vision<small>理念</small></a></li>
+          <li><a href="business.html" data-cursor>Business<small>事業</small></a></li>
+          <li><a href="company.html" data-cursor>Company<small>会社</small></a></li>
+          <li><a href="recruit.html" data-cursor>Recruit<small>採用</small></a></li>
+          <li><a href="news.html" data-cursor>News<small>お知らせ</small></a></li>
+        </ul>
+      </nav>
+      <a class="pill" href="contact.html" data-cursor data-magnetic><span>CONTACT</span><i></i></a>
+      <button class="burger" id="burger" aria-label="メニューを開く" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ============ FULLSCREEN MENU ============ -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <nav class="menu__nav" aria-label="モバイルナビゲーション">
+      <a href="#vision" data-no><em>01</em><span>Vision</span><small>理念</small></a>
+      <a href="business.html"><em>02</em><span>Business</span><small>事業内容</small></a>
+      <a href="company.html"><em>03</em><span>Company</span><small>会社概要</small></a>
+      <a href="recruit.html"><em>04</em><span>Recruit</span><small>採用情報</small></a>
+      <a href="news.html"><em>05</em><span>News</span><small>お知らせ</small></a>
+      <a href="contact.html" class="menu__cta"><em>06</em><span>Contact</span><small>お問い合わせ</small></a>
+    </nav>
+  </div>
+
+  <main id="main">
+    <span id="top"></span>
+
+    <!-- ============ HERO (WebGL flame) ============ -->
+    <section class="hero" id="hero">
+      <canvas class="hero__canvas" id="flame" aria-hidden="true"></canvas>
+      <div class="hero__veil" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <p class="hero__eyebrow"><span class="r"><span>STRATEGY × IT × IMPLEMENTATION</span></span></p>
+        <h1 class="hero__title">
+          <span class="line"><span>挑戦を、</span></span>
+          <span class="line"><span>熱狂に。</span></span>
+        </h1>
+        <p class="hero__lead"><span class="r"><span>提案で、終わらせない。現場に入り、実装までやり切る。</span></span><span class="r"><span>戦略とテクノロジーで、クライアントと社会の成長に、火を灯す。</span></span></p>
+      </div>
+      <div class="hero__foot">
+        <a href="#vision" class="hero__scroll" data-cursor aria-label="下へスクロール"><span>SCROLL</span><i></i></a>
+        <p class="hero__tag"><span class="r"><span>百人百祭 — Hyakunin Hyakusai</span></span></p>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" id="marqueeTrack">
+        <span>FIELD-DRIVEN<i></i>百人百祭<i></i>IGNITE THE FIELD<i></i>戦略 × IT × 地方創生<i></i>FESTAL<i></i>FIELD-DRIVEN<i></i>百人百祭<i></i>IGNITE THE FIELD<i></i>戦略 × IT × 地方創生<i></i>FESTAL<i></i></span>
+      </div>
+    </div>
+
+    <!-- ============ VISION ============ -->
+    <section class="sec vision grid-bg" id="vision">
+      <div class="wrap">
+        <div class="rule">
+          <span class="rule__ix">01 / 05</span>
+          <span class="rule__label">VISION</span>
+          <span class="rule__line"></span>
+          <span class="rule__meta">百人百祭</span>
+        </div>
+        <h2 class="vision__head">
+          <span class="line"><span>“ <b>百人百祭</b> ”</span></span>
+        </h2>
+        <div class="vision__row">
+          <p class="vision__read">ひゃくにん・ひゃくさい</p>
+          <div class="vision__body reveal">
+            <p><strong>“Festal”</strong> は「Festa＝祭」を冠する集団です。祭には古来より「願い」と「感謝」、そして非日常の高揚と一体感が宿ってきました。</p>
+            <p>私たちの願いは、<mark>一人ひとりが自分の願いに向かって一歩を踏み出す</mark>こと。その熱い想い（火）のまわりに、仲間やお客様、お取引先が集い、まるで祭りのように熱気あふれる——その状態を <strong>「百人百祭」</strong> と呼びます。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ APPROACH (precision grid + scroll-drawn diagram) ============ -->
+    <section class="sec grid-bg" id="impact">
+      <div class="wrap">
+        <div class="rule">
+          <span class="rule__ix">02 / 05</span>
+          <span class="rule__label">CASE STUDIES</span>
+          <span class="rule__line"></span>
+          <span class="rule__meta">Selected Works</span>
+        </div>
+        <h2 class="big reveal">成果で、応える。</h2>
+        <p class="lead reveal">小売・SaaS・金融・自治体まで、業界・業種を問わず。現場に入り込み実装まで伴走し、コスト・工数・スピードに直結する成果で応えます。</p>
+
+        <div class="cases">
+          <article class="case reveal">
+            <span class="case__cat">CASE 01 ／ 専門商社（鉄鋼）</span>
+            <p class="case__metric"><span class="case__sign">−</span><span class="count" data-target="300">0</span><span class="case__unit">万円</span></p>
+            <p class="case__metric-label">1部署あたり ／ 年間コスト削減</p>
+            <p class="case__result">引合〜請求の業務を可視化し、<b>1部署あたり年間約300万円規模</b>のコスト削減施策をご提案。横展開すれば、全社規模のインパクトへ。</p>
+            <p class="case__work">顧客・自社・メーカーの3社間にまたがる業務プロセスを可視化。課題を抽出し、打ち手の提案から伴走支援までやり切る。</p>
+          </article>
+          <article class="case reveal">
+            <span class="case__cat">CASE 02 ／ 建築（ハウスメーカー）</span>
+            <p class="case__metric"><span class="case__sign">−</span><span class="count" data-target="20">0</span><span class="case__unit">%</span></p>
+            <p class="case__metric-label">商談〜契約の リードタイム短縮</p>
+            <p class="case__result">CRM導入で営業1人あたり <b>月約30時間</b> を創出し、商談〜契約のリードタイムを <b>20%短縮</b>。営業組織全体の生産性を底上げする施策をご提案。</p>
+            <p class="case__work">商談〜着工の営業フローを可視化。設計・工事・土地調査・司法書士・県庁など、複数組織にまたがる一連のフローを整理し、ボトルネックを洗い出し。</p>
+          </article>
+          <article class="case reveal">
+            <span class="case__cat">CASE 03 ／ 人材（人材派遣）</span>
+            <p class="case__metric"><span class="case__sign">−</span><span class="count" data-target="60">0</span><span class="case__unit">h</span></p>
+            <p class="case__metric-label">事務員1人あたり ／ 月間工数削減</p>
+            <p class="case__result">基幹システム構築で、事務員1人あたり <b>月60時間（年間 約720時間）</b> を削減。煩雑なバックヤード業務から、人を解放。</p>
+            <p class="case__work">Excel中心だった案件管理・シフト収集〜作成・経理処理（見積・請求）の全体像を整理し、基幹システムの構築をご提案。</p>
+          </article>
+        </div>
+      </div>
+
+      <!-- mesh-gradient mission band -->
+      <div class="mission">
+        <canvas class="mission__canvas" id="meshLight" aria-hidden="true"></canvas>
+        <div class="wrap mission__inner">
+          <p class="mission__eyebrow">OUR MISSION</p>
+          <p class="mission__text"><span class="line"><span>現場に入り込み、実装までやり切る。</span></span><span class="line"><span>クライアントと社会の成長に、火を灯す。</span></span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BUSINESS (pinned horizontal) ============ -->
+    <section class="sec business" id="business">
+      <div class="wrap business__head">
+        <div class="rule">
+          <span class="rule__ix">03 / 05</span>
+          <span class="rule__label">BUSINESS</span>
+          <span class="rule__line"></span>
+          <span class="rule__meta">3 Domains</span>
+        </div>
+        <h2 class="big"><span class="line"><span>事業内容</span></span></h2>
+        <p class="lead reveal">IT・戦略・地方創生の3領域を、戦略策定から現場の実行支援まで一気通貫でご支援。現場に深く入り込み、実行までやり切ることで、成果に直結する変革を起こします。</p>
+      </div>
+
+      <div class="wrap">
+        <div class="biz-grid">
+          <article class="bcard" data-domain="it">
+            <div class="bcard__media"><img src="assets/images/business/it.jpg" alt="コードとダッシュボードが表示された開発環境" loading="lazy" width="1600" height="1200" /></div>
+            <span class="bcard__no">01</span>
+            <div class="bcard__body">
+              <p class="bcard__tag">IT Consulting</p>
+              <h3 class="bcard__title">ITコンサルティング</h3>
+              <p class="bcard__desc">DX推進、システム構想策定から導入・定着まで。提案で終わらせず、現場とともに手を動かし、データとテクノロジーを成果として根づかせます。</p>
+            </div>
+          </article>
+
+          <article class="bcard" data-domain="strategy">
+            <div class="bcard__media"><img src="assets/images/business/strategy.jpg" alt="会議で戦略を議論するビジネスチーム" loading="lazy" width="1600" height="1200" /></div>
+            <span class="bcard__no">02</span>
+            <div class="bcard__body">
+              <p class="bcard__tag">Strategy Consulting</p>
+              <h3 class="bcard__title">戦略コンサルティング</h3>
+              <p class="bcard__desc">事業・成長戦略の策定から実行支援まで。描いて終わりにせず、現場で打ち手を回し、勝ち筋を成果に変えます。</p>
+            </div>
+          </article>
+
+          <article class="bcard" data-domain="regional">
+            <div class="bcard__media"><img src="assets/images/business/regional.jpg" alt="山あいの川沿いに広がる日本の地方の街並み" loading="lazy" width="1600" height="1067" /></div>
+            <span class="bcard__no">03</span>
+            <div class="bcard__body">
+              <p class="bcard__tag">Regional Revitalization</p>
+              <h3 class="bcard__title">地方創生プロジェクト</h3>
+              <p class="bcard__desc">地域の課題に向き合い、産官学を巻き込みながらプロジェクトを推進。持続可能な地域の成長を後押しします。</p>
+            </div>
+          </article>
+        </div>
+        <div class="biz-more reveal">
+          <a class="arrow" href="business.html" data-cursor data-magnetic><span>事業内容を詳しく見る</span><i></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COMPANY ============ -->
+    <section class="sec company grid-bg" id="company">
+      <div class="wrap company__grid">
+        <div class="company__left">
+          <div class="rule">
+            <span class="rule__ix">04 / 05</span>
+            <span class="rule__label">COMPANY</span>
+            <span class="rule__line"></span>
+          </div>
+          <h2 class="big">
+            <span class="line"><span>現場主義で、</span></span>
+            <span class="line"><span>本質を解く。</span></span>
+          </h2>
+        </div>
+        <div class="company__right reveal">
+          <p class="company__lead">Festalは、現場に入り込み、実装までやり切る——提案で終わらないコンサルティングを使命としています。戦略・テクノロジー・データを束ね、クライアント自身が動けるケイパビリティを残す。変化の激しい時代に、成果で応える伴走者であり続けます。</p>
+          <dl class="meta">
+            <div><dt>社名</dt><dd>株式会社Festal</dd></div>
+            <div><dt>事業</dt><dd>戦略・IT・地方創生コンサルティング</dd></div>
+            <div><dt>使命</dt><dd>現場に入り込み、実装までやり切る</dd></div>
+          </dl>
+          <a class="arrow" href="company.html" data-cursor data-magnetic><span>会社概要を見る</span><i></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RECRUIT ============ -->
+    <section class="sec recruit" id="recruit">
+      <div class="recruit__media" aria-hidden="true"><img src="assets/images/top/recruit.jpg" alt="" loading="lazy" /></div>
+      <div class="recruit__glow" aria-hidden="true"></div>
+      <div class="wrap recruit__inner">
+        <p class="eyebrow eyebrow--light"><i></i>RECRUIT</p>
+        <h2 class="recruit__head">
+          <span class="line"><span>心に、</span></span>
+          <span class="line"><span>火を灯す。</span></span>
+        </h2>
+        <p class="recruit__lead reveal">人、組織、会社、世の中の心に火を灯し、まだ見ぬ世界を共創できる仲間を募集しています。</p>
+        <a class="btn btn--light" href="recruit.html" data-cursor data-magnetic><span>採用情報を見る</span><i></i></a>
+      </div>
+    </section>
+
+    <!-- ============ NEWS ============ -->
+    <section class="sec news" id="news">
+      <div class="wrap">
+        <div class="news__top">
+          <div>
+            <div class="rule">
+              <span class="rule__ix">05 / 05</span>
+              <span class="rule__label">NEWS</span>
+              <span class="rule__line"></span>
+            </div>
+            <h2 class="big"><span class="line"><span>お知らせ</span></span></h2>
+          </div>
+          <a class="arrow pc-only" href="news.html" data-cursor data-magnetic><span>VIEW ALL</span><i></i></a>
+        </div>
+        <ul class="news__list">
+          <li class="news__item reveal"><a href="news-trustia.html" data-cursor>
+            <time datetime="2026-02">2026.02</time><span class="tag tag--red">IMPORTANT</span>
+            <p class="news__h">TRUSTIA HLD.の100%子会社化に関するお知らせ</p><i class="news__ar">→</i></a></li>
+          <li class="news__item reveal"><a href="news-gyomu-kaizen.html" data-cursor>
+            <time datetime="2024-10-27">2024.10.27</time><span class="tag">SERVICE</span>
+            <p class="news__h">業務改善コンサルプランのご案内</p><i class="news__ar">→</i></a></li>
+          <li class="news__item reveal"><a href="news-web-ad.html" data-cursor>
+            <time datetime="2024-10-14">2024.10.14</time><span class="tag">SERVICE</span>
+            <p class="news__h">WEB広告戦略プランのご案内</p><i class="news__ar">→</i></a></li>
+          <li class="news__item reveal"><a href="news-seminar.html" data-cursor>
+            <time datetime="2024-10-14">2024.10.14</time><span class="tag tag--red">CULTURE</span>
+            <p class="news__h">【人的資本経営】人事ポリシー強化合宿を実施しました</p><i class="news__ar">→</i></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="sec cta" id="contact">
+      <canvas class="cta__canvas" id="flame2" aria-hidden="true"></canvas>
+      <div class="cta__veil" aria-hidden="true"></div>
+      <div class="wrap cta__inner">
+        <p class="eyebrow eyebrow--light"><i></i>CONTACT</p>
+        <h2 class="cta__head">
+          <span class="line"><span>その挑戦に、</span></span>
+          <span class="line"><span>火を。</span></span>
+        </h2>
+        <p class="cta__lead reveal">事業のご相談、採用に関するお問い合わせ、その他ご質問など、お気軽にご連絡ください。</p>
+        <a class="btn btn--solid" href="contact.html" data-cursor data-magnetic><span>お問い合わせはこちら</span><i></i></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="ft">
+    <div class="wrap">
+      <a class="ft__logo" href="#top" data-cursor aria-label="株式会社Festal トップへ">
+        <span class="brand__icon" aria-hidden="true"></span>
+        <span>Festal</span>
+      </a>
+      <div class="ft__cols">
+        <nav class="ft__nav" aria-label="フッターナビゲーション">
+          <a href="index.html#vision" data-cursor>Vision <small>理念</small></a>
+          <a href="business.html" data-cursor>Business <small>事業内容</small></a>
+          <a href="company.html" data-cursor>Company <small>会社概要</small></a>
+          <a href="recruit.html" data-cursor>Recruit <small>採用情報</small></a>
+          <a href="news.html" data-cursor>News <small>お知らせ</small></a>
+          <a href="privacy.html" data-cursor>Privacy <small>プライバシーポリシー</small></a>
+        </nav>
+        <p class="ft__tag">百人百祭 — 一人ひとりが、<br>自分の祭りに熱狂する社会へ。</p>
+      </div>
+    </div>
+    <div class="ft__bottom">
+      <div class="wrap ft__bottom-in">
+        <p>© <span id="year">2026</span> Festal Inc.</p>
+        <button class="ft__top" id="toTop" data-cursor data-magnetic>PAGE TOP<i></i></button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- libs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/flame.js"></script>
+  <script src="js/gradient.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    /* IMPACT count-up (self-contained, IntersectionObserver + rAF) */
+    (function () {
+      var els = document.querySelectorAll('.count');
+      if (!els.length) return;
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      function run(el) {
+        var target = parseFloat(el.getAttribute('data-target')) || 0;
+        if (reduce) { el.textContent = String(target); return; }
+        var start = null, dur = 1500;
+        function step(ts) {
+          if (start === null) start = ts;
+          var p = Math.min((ts - start) / dur, 1);
+          var e = 1 - Math.pow(1 - p, 3);
+          el.textContent = String(Math.round(target * e));
+          if (p < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      }
+      if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) { if (en.isIntersecting) { io.unobserve(en.target); run(en.target); } });
+        }, { threshold: 0.4 });
+        els.forEach(function (el) { io.observe(el); });
+      } else {
+        els.forEach(run);
+      }
+    })();
+  </script>
+</body>
+</html>

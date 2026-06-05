@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>お問い合わせ｜株式会社Festal</title>
+  <meta name="description" content="株式会社Festalへのお問い合わせ。事業のご相談、採用、協業、取材などお気軽にご連絡ください。" />
+  <meta name="theme-color" content="#0b0d12" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://use.typekit.net/rzm1rkk.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Shippori+Mincho:wght@700;800&display=swap" />
+  <link rel="icon" href="assets/images/uploads/cropped-site-logo-32x32.jpg" sizes="32x32" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/subpage.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+  <header class="hdr" id="hdr" data-mode="dark">
+    <div class="hdr__inner">
+      <a class="brand" href="index.html" data-cursor aria-label="株式会社Festal トップへ"><span class="brand__icon" aria-hidden="true"></span><span class="brand__name">Festal</span></a>
+      <nav class="nav" aria-label="メインナビゲーション">
+        <ul>
+          <li><a href="index.html#vision" data-cursor>Vision<small>理念</small></a></li>
+          <li><a href="business.html" data-cursor>Business<small>事業</small></a></li>
+          <li><a href="company.html" data-cursor>Company<small>会社</small></a></li>
+          <li><a href="recruit.html" data-cursor>Recruit<small>採用</small></a></li>
+          <li><a href="news.html" data-cursor>News<small>お知らせ</small></a></li>
+        </ul>
+      </nav>
+      <a class="pill" href="contact.html" data-cursor data-magnetic><span>CONTACT</span><i></i></a>
+      <button class="burger" id="burger" aria-label="メニューを開く" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="menu" id="menu" aria-hidden="true">
+    <nav class="menu__nav" aria-label="モバイルナビゲーション">
+      <a href="index.html#vision" data-no><em>01</em><span>Vision</span><small>理念</small></a>
+      <a href="business.html" data-no><em>02</em><span>Business</span><small>事業内容</small></a>
+      <a href="company.html" data-no><em>03</em><span>Company</span><small>会社概要</small></a>
+      <a href="recruit.html" data-no><em>04</em><span>Recruit</span><small>採用情報</small></a>
+      <a href="news.html" data-no><em>05</em><span>News</span><small>お知らせ</small></a>
+      <a href="contact.html" data-no class="menu__cta"><em>06</em><span>Contact</span><small>お問い合わせ</small></a>
+    </nav>
+  </div>
+
+  <main id="main">
+    <section class="subhero">
+      <div class="subhero__glow" aria-hidden="true"></div>
+      <div class="wrap subhero__inner">
+        <nav class="crumb" aria-label="パンくず"><a href="index.html">Home</a><span>/</span>Contact</nav>
+        <p class="subhero__en reveal">Contact</p>
+        <p class="subhero__jp reveal">お問い合わせ</p>
+        <p class="subhero__line reveal">事業のご相談、採用に関するお問い合わせ、協業・取材など、お気軽にご連絡ください。</p>
+      </div>
+    </section>
+
+    <section class="psec">
+      <div class="wrap">
+        <form class="form reveal" id="contactForm" novalidate>
+          <div class="form__row">
+            <label for="f-name">お名前 <span class="req">必須</span></label>
+            <input type="text" id="f-name" name="name" autocomplete="name" required />
+          </div>
+          <div class="form__row">
+            <label for="f-company">会社名・団体名</label>
+            <input type="text" id="f-company" name="company" autocomplete="organization" />
+          </div>
+          <div class="form__row">
+            <label for="f-email">メールアドレス <span class="req">必須</span></label>
+            <input type="email" id="f-email" name="email" autocomplete="email" required />
+            <p class="form__note">ご返信のため、正確なメールアドレスをご入力ください。</p>
+          </div>
+          <div class="form__row">
+            <label for="f-type">お問い合わせ種別</label>
+            <select id="f-type" name="type">
+              <option>事業・サービスについて</option>
+              <option>採用について</option>
+              <option>協業・パートナーシップ</option>
+              <option>取材・メディア</option>
+              <option>その他</option>
+            </select>
+          </div>
+          <div class="form__row">
+            <label for="f-message">お問い合わせ内容 <span class="req">必須</span></label>
+            <textarea id="f-message" name="message" required></textarea>
+          </div>
+          <div class="form__submit">
+            <button type="submit" class="btn--submit" data-cursor data-magnetic><span>送信する</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+          <p class="form__disclaimer">※「送信する」を押すと、ご利用のメールソフトが起動し、<a href="mailto:info@festal-inc.com" style="color:var(--blue);">info@festal-inc.com</a> 宛のメールが入力内容で作成されます。内容をご確認のうえ、そのまま送信してください。</p>
+          <p class="form__success" id="formSuccess" role="status" style="display:none;margin-top:24px;padding:18px 22px;border-radius:4px;background:rgba(14,65,159,.08);border:1px solid rgba(14,65,159,.2);color:var(--blue);font-weight:700;">メールソフトを起動しました。起動しない場合は、お手数ですが <a href="mailto:info@festal-inc.com" style="color:inherit;text-decoration:underline;">info@festal-inc.com</a> まで直接ご連絡ください。</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ft">
+    <div class="wrap">
+      <a class="ft__logo" href="index.html" data-cursor aria-label="株式会社Festal トップへ"><span class="brand__icon" aria-hidden="true"></span><span>Festal</span></a>
+      <div class="ft__cols">
+        <nav class="ft__nav" aria-label="フッターナビゲーション">
+          <a href="index.html#vision" data-cursor>Vision <small>理念</small></a>
+          <a href="business.html" data-cursor>Business <small>事業内容</small></a>
+          <a href="company.html" data-cursor>Company <small>会社概要</small></a>
+          <a href="recruit.html" data-cursor>Recruit <small>採用情報</small></a>
+          <a href="news.html" data-cursor>News <small>お知らせ</small></a>
+          <a href="privacy.html" data-cursor>Privacy <small>プライバシーポリシー</small></a>
+        </nav>
+        <p class="ft__tag">百人百祭 — 一人ひとりが、<br>自分の祭りに熱狂する社会へ。</p>
+      </div>
+    </div>
+    <div class="ft__bottom"><div class="wrap ft__bottom-in"><p>© <span id="year">2026</span> Festal Inc.</p><button class="ft__top" id="toTop" data-cursor data-magnetic>PAGE TOP<i></i></button></div></div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    (function(){
+      var f = document.getElementById('contactForm');
+      if (!f) return;
+      var TO = 'info@festal-inc.com';
+      f.addEventListener('submit', function(e){
+        e.preventDefault();
+        if (!f.checkValidity()) { f.reportValidity(); return; }
+        var v = function(id){ var el = document.getElementById(id); return el ? el.value.trim() : ''; };
+        var name = v('f-name'), company = v('f-company'), email = v('f-email'), type = v('f-type'), message = v('f-message');
+        var subject = '【お問い合わせ】' + type + '／' + name + ' 様';
+        var body =
+          'お名前：' + name + '\n' +
+          '会社名・団体名：' + (company || '（未記入）') + '\n' +
+          'メールアドレス：' + email + '\n' +
+          'お問い合わせ種別：' + type + '\n\n' +
+          '――― お問い合わせ内容 ―――\n' + message + '\n';
+        var url = 'mailto:' + TO + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+        window.location.href = url;
+        document.getElementById('formSuccess').style.display = 'block';
+      });
+    })();
+  </script>
+</body>
+</html>
